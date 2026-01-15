@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="CodenameList">
+        <item>전체</item>
+        <item>콘서트</item>
+        <item>무용</item>
+        <item>클래식</item>
+        <item>국악</item>
+        <item>전시/미술</item>
+        <item>축제-기타</item>
+        <item>교육/체험</item>
+        <item>공모전</item>
+        <item>봉사활동</item>
+        <item>대외활동</item>
+    </string-array>
+</resources>

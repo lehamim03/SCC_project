@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="CustomCalendarView" parent="@style/CustomCalendarView" tools:ignore="ResourceCycle">
+        <item name="android:dateTextAppearance">@style/CustomDateText</item>
+    </style>
+
+    <style name="CustomDateText" parent="@android:style/TextAppearance.Small">
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">#A399DA</item>
+    </style>
+
+</resources> <!--values에 styles xml 추가 후 위의 코드 전부 추가!!!-->
+
+
+
+
+
+
+<!--
+style창에서 달력 숫자크기 조정-->

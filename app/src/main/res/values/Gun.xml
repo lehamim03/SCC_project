@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="GunnameList">
+        <item>전체</item>
+        <item>마포구</item>
+        <item>구로구</item>
+        <item>강북구</item>
+        <item>종로구</item>
+        <item>금천구</item>
+        <item>중구</item>
+        <item>강동구</item>
+        <item>송파구</item>
+    </string-array>
+</resources>

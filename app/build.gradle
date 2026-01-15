@@ -1,0 +1,76 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace = "com.scc.main1"
+    compileSdk = 33
+    viewBinding {
+        enabled = true
+    }
+    defaultConfig {
+        applicationId = "com.scc.main1"
+        minSdk = 24
+        targetSdk = 33
+        versionCode = 1
+        versionName = "1.0"
+
+        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled = false
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+    configurations {
+        all*.exclude group: 'com.google.guava', module: 'guava-jdk5'
+        all*.exclude group: 'com.google.guava', module: 'listenablefuture'
+    }
+
+}
+
+dependencies {
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.9.0")
+    implementation("com.kakao.sdk:v2-all:2.16.0")
+    implementation 'com.google.firebase:firebase-firestore:24.9.1'
+    implementation 'com.google.firebase:firebase-database:20.3.0'
+    testImplementation("junit:junit:4.13.2")
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    implementation platform('com.google.firebase:firebase-bom:32.3.1')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'androidx.media:media:1.3.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    // Add the dependency for the Firebase Authentication library
+    // When using the BoM, you don't specify versions in Firebase library dependencies
+    implementation("com.google.firebase:firebase-auth")
+    // Also add the dependency for the Google Play services library and specify its version
+    implementation("com.google.android.gms:play-services-auth:20.7.0")
+    implementation 'pub.devrel:easypermissions:3.0.0'
+    implementation('com.google.api-client:google-api-client-android:1.22.0') {
+        exclude group: 'org.apache.httpcomponents'
+        exclude group: 'com.google.guava' // 중복을 제거하기 위해 추가
+    }
+    implementation('com.google.apis:google-api-services-calendar:v3-rev235-1.22.0') {
+        exclude group: 'org.apache.httpcomponents'
+    }
+    implementation 'com.github.prolificinteractive:material-calendarview:2.0.1'
+    implementation "com.jakewharton.threetenabp:threetenabp:1.3.0"
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'com.google.firebase:firebase-messaging:23.3.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    implementation "androidx.work:work-runtime:2.7.0"
+}

@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "42356131926",
+    "firebase_url": "https://steady-tape-390216-default-rtdb.firebaseio.com",
+    "project_id": "steady-tape-390216",
+    "storage_bucket": "steady-tape-390216.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42356131926:android:a06dbb723352ac6d0813f7",
+        "android_client_info": {
+          "package_name": "com.scc.main1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42356131926-soe8b11dm2dnccrj5t9447trcpg4bu5p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCICUwhf8ZS2OFBylRO8VNSF2gdoiZOsvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "42356131926-soe8b11dm2dnccrj5t9447trcpg4bu5p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42356131926:android:38276280c964aaeb0813f7",
+        "android_client_info": {
+          "package_name": "com.scc.main1.local"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42356131926-soe8b11dm2dnccrj5t9447trcpg4bu5p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCICUwhf8ZS2OFBylRO8VNSF2gdoiZOsvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "42356131926-soe8b11dm2dnccrj5t9447trcpg4bu5p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
